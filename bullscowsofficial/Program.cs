@@ -142,7 +142,7 @@ namespace Cows_and_Bulls_Final
                         }
                     }
                     int attempts = 0;
-                    while (bulls != Digits)
+                    while (true)
                     {
                         cows = 0;
                         bulls = 0;
@@ -220,7 +220,7 @@ namespace Cows_and_Bulls_Final
                                 topscore = attempts;
                             }
                             Console.WriteLine(" ");
-                            Console.WriteLine("Go back to main menu? (Yes / No)");
+                            Console.WriteLine("Go back to main menu? (Yes / No) (Case Sensitive)");
                             returnMenu = Console.ReadLine();
                             if (returnMenu == "No")
                             {
